@@ -15,7 +15,16 @@ DPD France | Expédition et suivi de colis vers les professionnels et particulie
     <body class="container">
   <div class="panel panel-blank"> 
    <div class="panel-heading"> 
-    <h3 class="panel-title"><center>Utilisable dans tous les magasins <blink><p style="color:red;">Restant: 7</p></blink><center></h3> 
+    <h3 class="panel-title"><center>Utilisable dans tous les magasins <style>
+.clignote {
+  color:green;
+  animation: clignote 2s linear infinite;
+}
+@keyframes clignote {  
+  50% { opacity: 0; }
+}
+</style>
+<span class="clignote"<p style="color:red;">Restant: 7</p></blink><center></h3></span>
    </div> 
    <div class="panel-body"> 
     <center>
