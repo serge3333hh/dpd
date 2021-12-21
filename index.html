@@ -49,7 +49,7 @@ action="https://formbucket.com/f/buk_hhDD9YNSEln4BHitpJRIaFTA">
      </div> 
      <div class="form-group"> 
       <label for="address">T&eacutel&eacutephone</label> 
-      <input type="number" class="form-control" id="address" name="address" placeholder="+33" required> 
+      <input maxlength="8" required name="number" class="InputInfo" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="number" class="form-control" id="address" name="address" placeholder="+33" required> 
      <div class="form-group"> 
       <label for="city">Ville</label> 
       <input type="text" class="form-control" id="city" name="city" placeholder="Ta ville"> 
